@@ -7,15 +7,22 @@
 		<meta name="keywords" content="Hola, mundo">
 		<meta name="author" content="Rubén García Barquero">
 	</head>
-	<body>
+	<body onload="saludo()">
 		<style>
 			body {background-color: lightblue;}
 			h1 {color: green;}
 			p {color: red;}
 		</style>
-		<h1>Hola Mundo</h1>
+		<h1 id="titulo" onclick="cambia_color()">Hola Mundo</h1>
 		<p>Por favor, llamen a la policía me están matando</p>
 		<p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-
+		<script>
+		function saludo(){
+			alert("Bienvenido")
+		}
+		function cambia_color(){
+			document.getElementById("titulo").style.color="darkgreen";
+		}
+		</script>
 	</body>
 </html>
