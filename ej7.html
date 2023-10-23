@@ -23,7 +23,7 @@
 		<input type="checkbox" name="momento[]" value="cena">
 		<label>Cena</label><br><br>
 		<label>Ingredientes: </label><br>
-		<select multiple name="ingredientes" size="20" required>
+		<select multiple name="ingredientes[]" size="20" required>
 			<optgroup label="Carnes">
 				<option>Cerdo</option>
 				<option>Vaca</option>
@@ -65,13 +65,13 @@
 		<input type="radio" name="horas" value="2">
 		<label>2</label><br><br>
 		<label>Minutos: </label><br>
-		<input type="radio" name="minutos" value="0-15">
+		<input type="radio" name="minutos" value="0/15">
 		<label>0-15</label>
-		<input type="radio" name="minutos" value="15-30">
+		<input type="radio" name="minutos" value="15/30">
 		<label>15-30</label>
-		<input type="radio" name="minutos" value="30-45">
+		<input type="radio" name="minutos" value="30/45">
 		<label>30-45</label>
-		<input type="radio" name="minutos" value="45-60">
+		<input type="radio" name="minutos" value="45/60">
 		<label>45-60</label><br><br>
 		<label>Comentarios: </label><br>
 		<textarea rows="10" cols="50" placeholder="Texto" name="comentarios"></textarea><br><br>
