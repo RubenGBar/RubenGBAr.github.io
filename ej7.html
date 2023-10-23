@@ -6,26 +6,29 @@
 	<title>Tu receta</title>
 </head>
 <body>
-<form action="https://www.w3schools.com/action_page.php" method="post" >
+<form action="https://lm.ciclo.iesnervion.es/" method="post">
 	<fieldset>
 		<legend>Crear mi receta</legend>
-		<label>Nombre de la receta: </label>
-		<input type="text" name="nombre"><br>
+		<label >Nombre de la receta: </label>
+		<input type="text" name="nombre" required><br><br>
 		<label>Correo: </label>
-		<input type="email" name="correo"><br>
-		<label>¿Cuándo se debe comer esta receta?</label>
-		<input type="checkbox" name="momento" value="desayuno">
-		<input type="checkbox" name="momento" value="almuerzo">
-		<input type="checkbox" name="momento" value="merienda">
-		<input type="checkbox" name="momento" value="cena">
-		<label>Ingredientes: </label>
-		<select multiple name="ingredientes" >
+		<input type="email" name="correo" required><br><br>
+		<label>¿Cuándo se debe comer esta receta?</label><br>
+		<input type="checkbox" name="momento[]" value="desayuno">
+		<label>Desayuno</label>
+		<input type="checkbox" name="momento[]" value="almuerzo">
+		<label>Almuerzo</label>
+		<input type="checkbox" name="momento[]" value="merienda">
+		<label>Merienda</label>
+		<input type="checkbox" name="momento[]" value="cena">
+		<label>Cena</label><br><br>
+		<label>Ingredientes: </label><br>
+		<select multiple name="ingredientes" size="20" required>
 			<optgroup label="Carnes">
-				<option>Jamón</option>
-				<option>Secreto</option>
-				<option>Solomillo</option>
-				<option>Churrasco</option>
-				<option>Salchicha</option>
+				<option>Cerdo</option>
+				<option>Vaca</option>
+				<option>Pollo</option>
+				<option>Conejo</option>
 			</optgroup>
 			<optgroup label="Pescados">
 				<option>Pez Espada</option>
@@ -52,20 +55,30 @@
 				<option>Naranja</option>
 				<option>Limón</option>
 			</optgroup>
-		</select>
-		<label>Tiempo de preparación </label>
-		<label>Horas: </label>
-		<input type="number" name="horas_y_minutos" min="0" max="2">
-		<label>Minutos: </label>
-		<input type="checkbox" name="horas_y_minutos" value="0-15">
-		<input type="checkbox" name="horas_y_minutos" value="15-30">
-		<input type="checkbox" name="horas_y_minutos" value="30-45">
-		<input type="checkbox" name="horas_y_minutos" value="45-60">
-		<label>Comentarios: </label>
-		<textarea rows="10" cols="50" placeholder="Texto" name="comentarios"></textarea>
+		</select><br><br>
+		<label>Tiempo de preparación </label><br>
+		<label>Horas: </label><br>
+		<input type="radio" name="horas" value="0">
+		<label>0</label>		
+		<input type="radio" name="horas" value="1">
+		<label>1</label>
+		<input type="radio" name="horas" value="2">
+		<label>2</label><br><br>
+		<label>Minutos: </label><br>
+		<input type="radio" name="minutos" value="0-15">
+		<label>0-15</label>
+		<input type="radio" name="minutos" value="15-30">
+		<label>15-30</label>
+		<input type="radio" name="minutos" value="30-45">
+		<label>30-45</label>
+		<input type="radio" name="minutos" value="45-60">
+		<label>45-60</label><br><br>
+		<label>Comentarios: </label><br>
+		<textarea rows="10" cols="50" placeholder="Texto" name="comentarios"></textarea><br><br>
 		<label>Foto: </label>
-		<input type="file" name="imagen">
-	</fieldset>
+		<input type="file" name="imagen"><br>
+	</fieldset><br>
+	<input type="submit" name="enviar" value="Enviar">
 </form>
 </body>
 </html>
