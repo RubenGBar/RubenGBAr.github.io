@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tu receta</title>
+</head>
+<body>
+<form action="https://www.w3schools.com/action_page.php" method="post" >
+	<fieldset>
+		<legend>Crear mi receta</legend>
+		<label>Nombre de la receta: </label>
+		<input type="text" name="nombre"><br>
+		<label>Correo: </label>
+		<input type="email" name="correo"><br>
+		<label>¿Cuándo se debe comer esta receta?</label>
+		<input type="checkbox" name="momento" value="desayuno">
+		<input type="checkbox" name="momento" value="almuerzo">
+		<input type="checkbox" name="momento" value="merienda">
+		<input type="checkbox" name="momento" value="cena">
+		<label>Ingredientes: </label>
+		<select multiple name="ingredientes" >
+			<optgroup label="Carnes">
+				<option>Jamón</option>
+				<option>Secreto</option>
+				<option>Solomillo</option>
+				<option>Churrasco</option>
+				<option>Salchicha</option>
+			</optgroup>
+			<optgroup label="Pescados">
+				<option>Pez Espada</option>
+				<option>Atún</option>
+				<option>Salmón</option>
+				<option>Dorada</option>
+				<option>Tiburón</option>
+				<option>Pez León</option>
+				<option>Pez Globo</option>
+				<option>Sardina</option>
+				<option>Asadia</option>
+			</optgroup>
+			<optgroup label="Verduras">
+				<option>Pimiento</option>
+				<option>Berenjena</option>
+				<option>Lechuga</option>
+				<option>Pepino</option>
+				<option>Cebolla</option>
+			</optgroup>
+			<optgroup label="Frutas">
+				<option>Tomate</option>
+				<option>Fresa</option>
+				<option>Plátano</option>
+				<option>Naranja</option>
+				<option>Limón</option>
+			</optgroup>
+		</select>
+		<label>Tiempo de preparación </label>
+		<label>Horas: </label>
+		<input type="number" name="horas_y_minutos" min="0" max="2">
+		<label>Minutos: </label>
+		<input type="checkbox" name="horas_y_minutos" value="0-15">
+		<input type="checkbox" name="horas_y_minutos" value="15-30">
+		<input type="checkbox" name="horas_y_minutos" value="30-45">
+		<input type="checkbox" name="horas_y_minutos" value="45-60">
+		<label>Comentarios: </label>
+		<textarea rows="10" cols="50" placeholder="Texto" name="comentarios"></textarea>
+		<label>Foto: </label>
+		<input type="file" name="imagen">
+	</fieldset>
+</form>
+</body>
+</html>
