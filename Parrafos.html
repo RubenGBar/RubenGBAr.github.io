@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Párrafos</title>
+
+	<style type="text/css">
+		
+		a {
+			color: white;
+			width: 100px;
+			height: 50px;
+		}
+
+		div{
+			border-radius: 15px;
+			height: 200px;
+			width: 400px; 
+			padding: 10px;
+		}
+
+		a, div{
+			display: table-cell;
+		}
+
+		#div2 a{
+			display: block;
+		}
+
+		div, p{
+			font-weight: bold;
+		}
+
+		.rojo{
+			background-color: red;
+		}
+
+		.azul{
+			background-color: blue;
+		}
+
+		.verde{
+			background-color: green;
+		}
+
+		#div1{
+			background-color: lightgreen;
+		}
+
+		#div2{
+			background-color: cyan;
+		}
+
+		#div3{
+			background-color: lightpink;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<h1>CSS: Ejercicio 1</h1>
+<p style=" text-align: right; font-style: italic;">
+	Párrafo 1	
+</p>
+
+<p style=" text-transform: uppercase; text-decoration: line-through;">
+	párrafo 2
+</p>
+
+<p style=" font-family: monospace; font-size: 1.5em;">
+	Párrafo 3
+</p>
+
+<p style=" bold; text-shadow: -4px 3px 2px green; font-weight: bold;">
+	Párrafo 4
+</p>
+<hr>
+
+<div id="div1">
+	<p>Buscadores:</p>
+	<a href="https://duckduckgo.com/" class="rojo">DuckDuckGo</a>
+	<a href="https://www.ecosia.org/?c=es" class="verde">Ecosia</a>
+	<a href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwjlmPaDpNyBAxUCVqQEHZP7AIsQPAgJ" class="azul">Google</a>
+</div>
+
+
+<div id="div2">
+	<p>Redes Sociales:</p>
+	<a href="https://www.facebook.com/?locale=es_ES" class="rojo">Facebook</a>
+	<a href="https://twitter.com/?lang=es" class="verde">Twitter</a>
+	<a href="https://www.pinterest.es/" class="azul">Pinterest</a>
+</div>
+
+
+<div id="div3">
+	<p>Noticias:</p>
+	<a href="https://elpais.com/">El Pais</a>
+	<a href="https://www.eldiario.es/">El Diario</a>
+	<a href="https://www.elmundo.es/">El Mundo</a>
+</body>
+</html>
