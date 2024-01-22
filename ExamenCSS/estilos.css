@@ -1,0 +1,26 @@
+		h1{
+			color: darkred;
+			border-block: solid 1px;
+			border-radius: 5px;
+			border-top: 0px;
+			border-right: 0px;
+			font-style: italic;
+		}
+		img{
+			max-width: 150px;
+			max-height: 150px;
+		}
+		p{
+			margin: auto;
+			display: block;
+		}
+		video{
+			max-width: 400px;
+			max-height: 200px;
+			display: block;
+			margin: auto;
+			padding: 20px;
+		}
+		a{
+			
+		}
